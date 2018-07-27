@@ -8,7 +8,7 @@ server:
 spring:
   profiles: dev   #开发环境
   application:
-    name: microservicecloud-config-eureka-client
+    name: microservicecloud-config-dept-client
 mybatis:
   config-location: classpath:mybatis/mybatis.cfg.xml        # mybatis配置文件所在路径
   type-aliases-package: com.atguigu.springcloud.entities    # 所有Entity别名类所在包
@@ -17,7 +17,7 @@ mybatis:
     
 spring:
    application:
-     name: microservicecloud-dept 
+     name: microservicecloud-config-dept-client 
    datasource:
      type: com.alibaba.druid.pool.DruidDataSource            # 当前数据源操作类型
      driver-class-name: org.gjt.mm.mysql.Driver              # mysql驱动包
@@ -49,7 +49,7 @@ server:
 spring:
   profiles: test   #开发环境
   application:
-    name: microservicecloud-config-eureka-client
+    name: microservicecloud-config-dept-client
 mybatis:
   config-location: classpath:mybatis/mybatis.cfg.xml        # mybatis配置文件所在路径
   type-aliases-package: com.atguigu.springcloud.entities    # 所有Entity别名类所在包
@@ -58,7 +58,7 @@ mybatis:
     
 spring:
    application:
-     name: microservicecloud-dept 
+     name: microservicecloud-config-dept-client 
    datasource:
      type: com.alibaba.druid.pool.DruidDataSource            # 当前数据源操作类型
      driver-class-name: org.gjt.mm.mysql.Driver              # mysql驱动包
